@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">HyTeProject</string>
+    <string name="submit">Submit</string>
+    <string name="amount_of_calories">Amount of calories</string>
+    <string name="food_name">Food name</string>
+    <string name="yesterdays_calories">Yesterdays calories</string>
+    <string name="listRemovalText">Tap an item to remove it from the list</string>
+    <string name="steps">0</string>
+    <string name="your_weight">Your Weight</string>
+    <string name="your_height">Your Height</string>
+    <string name="weight_input">Type here (kg)</string>
+    <string name="height_input">Type here (cm)</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="calculate">Calculate</string>
+    <string name="calculatedBmi"></string>
+    <string name="textViewStepsText">Steps</string>
+    <string name="settings_button">Settings button</string>
+    <string name="food_diary">Food diary</string>
+    <string name="go_to_food_diary">Go to food diary</string>
+    <string name="step_target">Step target</string>
+    <string name="step_counter">Step counter</string>
+    <string name="calorie_target">Calorie target</string>
+    <string name="theme">Theme</string>
+    <string name="theme1">Theme1</string>
+    <string name="theme2">Theme2</string>
+    <string name="theme3">Theme3</string>
+    <string name="back_to_menu">Back to menu</string>
+    <string name="metric">Metric</string>
+    <string name="imperial">Imperial</string>
+    <string name="your_target">Your target:</string>
+    <string name="reset_button">Reset count</string>
+</resources>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/settingsButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#00000000"
+                        android:contentDescription="@string/settings_button"
+                        android:onClick="goToSettings"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/settings" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewStepsTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textViewStepsText"
+                        android:textAlignment="center"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/stepText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/steps"
+                        android:textAlignment="center"
+                        android:textSize="36sp" />
+
+                    <Button
+                        android:id="@+id/resButt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#14B381"
+                        android:onClick="resetStepsButton"
+                        android:text="@string/reset_button" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".9"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewStepCounterSettingsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/food_diary"
+                    android:textAlignment="center"
+                    android:textSize="40sp" />
+
+                <ImageButton
+                    android:id="@+id/goToFoodDiaryButton"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:background="#00000000"
+                    android:contentDescription="@string/go_to_food_diary"
+                    android:onClick="goToFoodDiary"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/pointer" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewBMITitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bmi_calculator"
+                    android:textAlignment="center"
+                    android:textSize="40sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10sp"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight=".50"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewWeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/your_weight"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <EditText
+                            android:id="@+id/weightInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/weight_input"
+                            android:importantForAutofill="no"
+
+                            android:inputType="numberDecimal"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginEnd="10sp"
+                        android:layout_weight=".50"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewHeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/your_height"
+                            android:textAlignment="center"
+
+                            android:textSize="30sp" />
+
+                        <EditText
+                            android:id="@+id/heightInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/height_input"
+
+                            android:importantForAutofill="no"
+                            android:inputType="numberDecimal"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bmiButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:backgroundTint="#14B381"
+                    android:onClick="calculateBMI"
+                    android:text="@string/calculate" />
+
+                <TextView
+                    android:id="@+id/textViewCalculatedBMI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/calculatedBmi"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    app:layout_constraintTop_toBottomOf="@+id/calcBut" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
